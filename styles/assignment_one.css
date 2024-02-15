@@ -1,5 +1,5 @@
 .card {
-    box-shadow: 0rem 0.125rem 1.5rem rgb (0, 0, 0, 12%);
+    box-shadow: 0rem 0.125rem 1.5rem rgb(0, 0, 0, 12%);
     background-color: white;
     border-radius: 0.25rem;
     flex: 1;
@@ -17,7 +17,7 @@
   }
 
     
-  .card-content {
+  .card-container {
     padding: 1rem;
   }
   
@@ -36,16 +36,17 @@
        margin: 0.5rem; 
     }
 
-.card-container {
-    display: flex;
-    flex-wrap: wrap;
+    .card-container {
+        display: flex;
+        flex-wrap: wrap;
 }
 
-img {
-    min-height: 15.5 rem
+    img {
+        min-height: 15.5rem
+    }
 }
-}
-/* desktop, desktop breakpoints */
+
+/* desktop */
 @media screen and (min-width: 1200px) {
     .card {
         flex-basis: calc(33.333% - 20px);
