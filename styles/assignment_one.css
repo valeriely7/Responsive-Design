@@ -7,12 +7,18 @@
 }
 
 /* mobile */
+@media screen and (max-width: 768px) {
 .card {
     background-color: #fff;
     border-radius: 0.25rem;
     box-shadow: 0rem 0.125rem 1.5rem rgb(0 0 0 / 12%);
     width: 100%; 
     margin-bottom: 1rem; 
+  }
+
+    
+  .card-content {
+    padding: 1rem;
   }
   
   img {
@@ -21,10 +27,7 @@
     height: auto;
     width: 100%;
   }
-  
-  .card-content {
-    padding: 1rem;
-  }
+}
 
 /* tablet */
 @media screen and (min-width: 768px) {
@@ -44,17 +47,16 @@ img {
 }
 /* desktop, desktop breakpoints */
 @media screen and (min-width: 1200px) {
+    .card {
+        flex-basis: calc(33.333% - 20px);
+        margin: 0.5rem;
+     }
+    
     .card-container {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
     }
-
-        .card {
-           flex-basis: calc(33.333% - 20px);
-           margin: 0.5rem;
-        }
-    
 
     img {
         min-height: 16.375rem;
